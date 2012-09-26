@@ -10,7 +10,10 @@ body{
 	font-family:"HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
 	margin:0;
 	padding:0;
+	background-color: #E6E6E1;
 }
+
+html { background-color: #FFF; }
 
 h1,h2,h3,h4 { margin: 0; padding: 0 12px 0 12px; }
 
@@ -77,7 +80,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .col-33 { width: 33%; }
 .col-50 { width: 50%; }
 .col-66 { width: 66%; }
-.col-20, .col-25, .col-33, .col-50, .col-66 { float: left;}
+.col-75 { width: 75%; }
+.col-20, .col-25, .col-33, .col-50, .col-66, .col-75 { float: left;}
 .row, .col { overflow: hidden;}
 
 
@@ -110,6 +114,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* Footer */
+.footerFrame {
+	background-color: #FFF;
+	min-height: 14.4em;
+}
+.footer {
+	color: #666;
+	padding: 24px 0;
+}
 
 /* Homepage */
 
