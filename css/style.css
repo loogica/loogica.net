@@ -88,7 +88,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .main { padding: 0 0 0 0;}
 
 /* Header */
-.headerFrame { height: 12em; }
+.headerFrame { height: 9.6em; border-top: 3px solid #CC0000; }
+.header .siteID{ padding:0 0 7px; float:left; }
+.header .siteLogo { margin:0; padding:0 0; }
+.header .siteLogo a { text-indent: -9999px; width:162px; height:72px; margin:24px 0 0 0; padding:0; display:block; background: transparent url(../img/sitelogo-header.png) no-repeat left top; }
 
 
 /* Global Navigation */
