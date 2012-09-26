@@ -105,12 +105,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* Global Navigation SubMenu */
 
 /* Content */
+.contentFrame {
+	min-height: 57.6em;
+}
 
 /* Footer */
 
 /* Homepage */
 
+.bodyHome .content h2 {
+	color: #C00;
+	font-size: 6.0em;
+	line-height: 1.2em;
+	letter-spacing: -0.033em;
+	margin: 0;
+	padding: 0.2166em 0 17px 0.15em;
+	opacity: 0.5;
 
+}
 
 
 /* Debug Grid */
