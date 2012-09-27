@@ -32,9 +32,9 @@ p {padding: 0 24px 14px 12px; margin: 0 0 10px;}
 ul { margin: 0 0 2.4em 0; padding:0 0 0 4em ; }
 ol { margin: 0 0 2.4em 0; padding:0 0 0 4em ; }
 
-dl { margin: 0 0 2.4em 0; padding: 0 0 0 4em; }
+dl { margin: 0 0 2.4em 0; padding: 0 0 0 1.2em; }
 dt { margin: 0 0 0 0; padding: 0 0 0 0; font-weight: 700;}
-dd { margin: 0 0 0 0; padding: 0 0 0 0; }
+dd { margin: 0 0 0 0; padding: 0 0 0 1.7em; }
 
 table { border-collapse: collapse; width: 100%; margin: 0 0 2.0em 12px; }
 th, caption { text-align: left; font-weight: 700; }
