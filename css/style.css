@@ -123,6 +123,94 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	padding: 24px 0;
 }
 
+/* Original do basalStyle */
+
+/* Forms */
+.formRow { margin: 0; padding: 0 1.2em 1.2em; list-style: none; }
+.submitRow { margin: 0; padding: 8px 12px 0 12px; }
+.formRow label,.formRow legend {
+	color: #333;
+	font-size: 1.6em;
+	font-weight: 700;
+	line-height: 1.5em;
+	padding: 0;
+	margin: 0;
+}
+.formRow p{ color:#999; font-style: italic; line-height:1.4em; margin: 0 0 0 0; padding: 0 0 0 0; }
+.formRow:hover p,
+.formRow :focus + p { color: #000; font-style: normal; }
+.labelBlock label { display: block; }
+.inputText input {
+	font-size: 1.8em;
+	line-height: 1em;
+	margin: 6px 0;
+	padding: 12px 1em;
+	width: 96%;
+	display: block;
+	border: 1px solid #DEDFE0;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	/* Box Shadow - Cross-Browser */
+  -webkit-box-shadow: 0 -1px 0 #ADB1B7;
+	box-shadow: 0 -1px 0 #ADB1B7;
+	background-color: #F8F8F9;
+}
+.inputText-66 input {
+	width: 66%;
+}
+.inputText-33 input {
+	width: 33%;
+}
+.inputRadio fieldset { padding: 0; border: none; }
+.inputRadio dl { margin: 0; padding: 0 0 0 1em; }
+.inputRadio label { font-size: 1em; font-weight: 300; }
+.inputRadio input { display: inline-block; margin-right: 0.66em; }
+.selectDropdown select { font-size: 1.2em; margin: 6px 0; padding: 2px 5px; overflow: hidden; display: inline-block; border: 1px solid #DEDFE0; border-radius: 4px 4px 4px 4px; -webkit-box-shadow: 0 1px 0 #ADB1B7; box-shadow: 0 1px 0 #ADB1B7; background-color: #F8F8F9; }
+.labelInline label { font-size: 1.2em; font-weight: 400; line-height: 1.666em; padding: 0; margin: 0; float: left; }
+
+/* Form Errors */
+.errorList { color: red; }
+.errorList li + li,
+.errorList dd + dd { line-height: 1.3em; margin: 0; padding-bottom:0.7em; }
+.errorList dt { line-height: 1.0em; }
+.errorList dd { padding-left:1em; }
+.formRow .errorList { margin: 0; padding: 0 0 0 1em; border-left: 6px solid #F66; list-style: none; }
+.formRow .errorList + input,
+.formRow .errorList + input + input,
+.formRow .errorList + textarea,
+.errorInput input { margin: 0 0 6px; box-shadow: none; border: 1px solid #F66; border-left: 6px solid #F66; border-radius: 0; background: #FFE4E1; }
+.errorInput label{ color: red; }
+
+.submitButton, .submitButton:visited {
+
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 2.5em;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+	padding: 0 20px;
+	height: 40px;
+	min-width: 100px;
+	display: inline-block;
+	border: 0 none;
+	border-radius: 0.3em;
+	box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.1), 0 -2px 0 0 rgba(0, 0, 0, 0.2) inset;
+	background-color: #33ADE0;
+	background-image: -moz-linear-gradient(#99D6EF, #006699);
+	background-image: -webkit-linear-gradient(#99D6EF, #33ADE0);
+	background-repeat: repeat-x;
+	-moz-transition: all 0.25s linear 0s;
+
+}
+
+.submitButton:active { position: relative; top: 2px; }
+
+/* Fim basalStyle */
+
+
 /* Homepage */
 
 .bodyHome .content h2 {
