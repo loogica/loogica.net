@@ -221,33 +221,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	margin: 0;
 	padding: 0.2166em 0 17px 0.15em;
 	opacity: 0.5;
-
 }
 
-.homeSignup {
+.homeSignup, .homeSignup:visited {
 	color: #FFF;
 	font-size: 1.0em;
 	font-weight: 700;
-	line-height: 120px;
+	line-height: 110px;
 	text-transform: uppercase;
-	margin: 0 auto;
+	margin: 1em auto;
 	padding: 10px;
-	height: 126px;
-	width: 126px;
+	height: 115px;
+	width: 115px;
 	display: block;
 	border: 6px solid #FFF;
 	border-radius: 80px;
 	text-align: center;
 	background: #33ADE0;
-	background: -moz-radial-gradient(50% 50%, circle closest-corner, rgba(153, 214, 234, 1) 15%, rgba(51, 173, 224, 1) 95%);
-	background: -webkit-radial-gradient(50% 50%, circle closest-corner, rgba(153, 214, 234, 1), rgba(51, 173, 224, 1) );
+	background: -moz-radial-gradient(50% 50%, circle closest-corner, #99D6EF 15%, #006699 95%);
+
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
 }
+
 .homeSignup span{
 	line-height: 1.4em;
 	vertical-align: middle;
 	display: inline-block;
-	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
-
+	text-shadow: 0 -1px 3px rgba(0, 0, 0, 0.35);
 }
 
 /* Debug Grid */
