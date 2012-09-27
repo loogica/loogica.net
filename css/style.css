@@ -122,53 +122,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	opacity: 0.6;
 }
 /* Footer */
-.footerFrame {
-	background-color: #FFF;
-	min-height: 14.4em;
-}
-.footer {
-	color: #666;
-	padding: 24px 0;
-}
+.footerFrame { background-color: #FFF; min-height: 14.4em; }
+.footer { color: #666; padding: 24px 0; }
 
 /* Original do basalStyle */
 
 /* Forms */
 .formRow { margin: 0; padding: 0 1.2em 1.2em; list-style: none; }
 .submitRow { margin: 0; padding: 8px 12px 0 12px; }
-.formRow label,.formRow legend {
-	color: #333;
-	font-size: 1.6em;
-	font-weight: 700;
-	line-height: 1.5em;
-	padding: 0;
-	margin: 0;
-}
+.formRow label,.formRow legend { color: #333; font-size: 1.6em; font-weight: 700; line-height: 1.5em; padding: 0; margin: 0; }
 .formRow p{ color:#999; font-style: italic; line-height:1.4em; margin: 0 0 0 0; padding: 0 0 0 0; }
 .formRow:hover p,
 .formRow :focus + p { color: #000; font-style: normal; }
 .labelBlock label { display: block; }
-.inputText input {
-	font-size: 1.8em;
-	line-height: 1em;
-	margin: 6px 0;
-	padding: 12px 1em;
-	width: 96%;
-	display: block;
-	border: 1px solid #DEDFE0;
-	-webkit-border-radius: 4px;
-	border-radius: 4px;
-	/* Box Shadow - Cross-Browser */
-  -webkit-box-shadow: 0 -1px 0 #ADB1B7;
-	box-shadow: 0 -1px 0 #ADB1B7;
-	background-color: #F8F8F9;
-}
-.inputText-66 input {
-	width: 66%;
-}
-.inputText-33 input {
-	width: 33%;
-}
+.inputText input { font-size: 1.8em; line-height: 1em; margin: 6px 0; padding: 12px 1em; width: 96%; display: block; border: 1px solid #DEDFE0; border-radius: 4px; box-shadow: 0 -1px 0 #ADB1B7; background-color: #F8F8F9; }
+.inputText-66 input { width: 66%; }
+.inputText-33 input { width: 33%; }
 .inputRadio fieldset { padding: 0; border: none; }
 .inputRadio dl { margin: 0; padding: 0 0 0 1em; }
 .inputRadio label { font-size: 1em; font-weight: 300; }
@@ -225,16 +194,7 @@ background-color: #006699;
 
 /* Homepage */
 
-.bodyHome .content h2 {
-	color: #C00;
-	font-size: 6.0em;
-	line-height: 1.2em;
-	letter-spacing: -0.033em;
-	text-transform: none;
-	margin: 0;
-	padding: 0.2166em 0 17px 0.15em;
-	opacity: 0.5;
-}
+.bodyHome .content h2 { color: #C00; font-size: 6.0em; line-height: 1.2em; letter-spacing: -0.033em; text-transform: none; margin: 0; padding: 0.2166em 0 17px 0.15em; opacity: 0.5; }
 
 .homeSignup, .homeSignup:visited {
 	color: #FFF;
@@ -262,12 +222,7 @@ background-color: #006699;
 	/*background-image: -webkit-linear-gradient(#006699, #006699);*/
 }
 
-.homeSignup span{
-	line-height: 1.4em;
-	vertical-align: middle;
-	display: inline-block;
-	text-shadow: 0 -1px 3px rgba(0, 0, 0, 0.35);
-}
+.homeSignup span{ line-height: 1.4em; vertical-align: middle; display: inline-block; text-shadow: 0 -1px 3px rgba(0, 0, 0, 0.35); }
 
 /* Debug Grid */
 .debug { background-image: url(../img/grid-1200x24.png); background-repeat: repeat-y; background-position: center top;}
