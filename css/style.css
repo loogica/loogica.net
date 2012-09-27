@@ -182,28 +182,32 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .errorInput label{ color: red; }
 
 .submitButton, .submitButton:visited {
+color: #FFFFFF;
+font-size: 14px;
+font-weight: 700;
+line-height: 2.5em;
+text-align: center;
+text-transform: uppercase;
+text-decoration: none;
+text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+margin: 12px 0;
+padding: 0 20px;
+height: 3em;
+min-width: 100px;
+display: inline-block;
+border: 0 none;
+border-radius: 0.3em;
+box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.1), 0 -2px 0 0 rgba(0, 0, 0, 0.2) inset;
+background-color: #0099cc;
+/*background-image: -moz-linear-gradient(#99D6EF, #006699);*/
+/*background-image: -webkit-linear-gradient(#99D6EF, #006699);*/
+background-repeat: repeat-x;
+}
 
-	color: #FFFFFF;
-	font-size: 14px;
-	font-weight: 700;
-	line-height: 2.5em;
-	text-align: center;
-	text-transform: uppercase;
-	text-decoration: none;
-	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
-	padding: 0 20px;
-	height: 40px;
-	min-width: 100px;
-	display: inline-block;
-	border: 0 none;
-	border-radius: 0.3em;
-	box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.1), 0 -2px 0 0 rgba(0, 0, 0, 0.2) inset;
-	background-color: #33ADE0;
-	background-image: -moz-linear-gradient(#99D6EF, #006699);
-	background-image: -webkit-linear-gradient(#99D6EF, #33ADE0);
-	background-repeat: repeat-x;
-	-moz-transition: all 0.25s linear 0s;
-
+.submitButton:hover {
+background-color: #006699;
+/*background-image: -moz-linear-gradient(#006699, #006699);*/
+/*background-image: -webkit-linear-gradient(#006699, #006699);*/
 }
 
 .submitButton:active { position: relative; top: 2px; }
@@ -237,10 +241,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	border: 6px solid #FFF;
 	border-radius: 80px;
 	text-align: center;
-	background: #33ADE0;
-	background: -moz-radial-gradient(50% 50%, circle closest-corner, #99D6EF 15%, #006699 95%);
-
+	background: #0099cc;
+	/*background: -moz-radial-gradient(50% 50%, circle closest-corner, #99D6EF 15%, #006699 95%);*/
+	/*background: -webkit-radial-gradient(center, #99D6EF, #006699 );*/
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
+}
+
+.homeSignup:hover {
+	background-color: #006699;
+	/*background-image: -moz-linear-gradient(#006699, #006699);*/
+	/*background-image: -webkit-linear-gradient(#006699, #006699);*/
 }
 
 .homeSignup span{
