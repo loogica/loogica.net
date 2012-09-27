@@ -113,6 +113,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	min-height: 57.6em;
 }
 
+.content h2 {
+	font-size: 3.0em;
+	line-height: 1.2em;
+	text-transform: uppercase;
+	padding: 18px 12px 24px;
+	margin: 0;
+	opacity: 0.6;
+}
 /* Footer */
 .footerFrame {
 	background-color: #FFF;
@@ -222,6 +230,7 @@ background-color: #006699;
 	font-size: 6.0em;
 	line-height: 1.2em;
 	letter-spacing: -0.033em;
+	text-transform: none;
 	margin: 0;
 	padding: 0.2166em 0 17px 0.15em;
 	opacity: 0.5;
