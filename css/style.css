@@ -229,26 +229,29 @@ background-color: #006699;
 .videoIndex header dl dt { display: none; }
 .videoIndex header dl dd { font-weight: 700; float: left; }
 
-.videoContent { min-height: 45.6em; overflow: hidden;}
-
-
-.videoMain {
-	padding: 0 12px;
-	float: right;
+.videoContent {
+	min-height: 45.6em;
+	overflow: hidden;
 }
-.videoDescription {
+
+.videoContent .videoDescription {
 	margin: 0 12px 0 0;
 	width: 25%;
 	float: left;
 	}
-.videoDescription p { font-size: 1.4em; }
+
+.videoContent .videoMain {
+	padding: 0 12px;
+	overflow: hidden;
+}
+
+.videoContent .videoDescription p { font-size: 1.4em; }
 
 
 
 
 /* Debug Grid */
 .debug { background-image: url(../img/grid-1200x24.png); background-repeat: repeat-y; background-position: center top;}
-
 
 
 /* END */
