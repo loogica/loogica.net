@@ -111,7 +111,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* Content */
 .contentFrame { min-height: 57.6em; }
 
-.content h2 { font-size: 3.0em; line-height: 1.2em; text-transform: uppercase; padding: 18px 12px 24px; margin: 0; opacity: 0.6; }
+.content h2, .videoIndex h1 { font-size: 3.0em; line-height: 1.2em; text-transform: uppercase; padding: 18px 12px 24px; margin: 0; opacity: 0.6; }
 
 /* Footer */
 .footerFrame { background-color: #FFF; min-height: 14.4em; }
@@ -225,7 +225,9 @@ background-color: #006699;
 .videoIndex header dl dt { display: none; }
 .videoIndex header dl dd { font-weight: 700; float: left; }
 
-.videoContent { min-height: 45.6em; overflow: hidden;}
+.videoContent { min-height: 45.6em; overflow: hidden; display: none;}
+
+.videoIndex header:hover + .videoContent { display: block;}
 
 .videoMain {
 	padding: 0 12px;
