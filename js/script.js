@@ -7,14 +7,9 @@ $(function(){
 
     $(".header").click(function(e) {  if (e.shiftKey) $(".footerFrame, .contentFrame, .headerFrame").toggleClass("debug"); });
 
-
-    // Inicia a lista fechada.
-    // Com o JavaScript desligado, a lista se apresenta aberta.
-    $('.videoContent').hide();
-
-
-
-
+    $('article').click(function() {
+    	$(this).find('.videoMain').toggle();
+	});
 
 });
 

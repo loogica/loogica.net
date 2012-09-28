@@ -221,31 +221,42 @@ background-color: #006699;
 .videoIndex h1 { font-size: 3em; line-height: 1em; text-transform: uppercase; padding: 21px 12px; }
 .videoIndex h2 { font-size: 2em; line-height: 1em; text-transform: none; margin: 0 0 0 12px; padding: 0; float: left; min-width: 48%; }
 .videoIndex article {  border-top: 1px dotted #BBB; border-bottom: 1px dotted #BBB;}
+
+
 .videoIndex article + article {  border-top: none; }
-.videoIndex header {  margin:0 0 0 0; padding: 5px 0 6px; }
-.videoIndex header:hover { background: rgba(255,255,255,0.5);}
-.videoIndex header:hover h2 { color: #000; opacity: 1;}
-.videoIndex header dl { }
+.videoIndex header {  margin:0 0 0 0; padding: 5px 0 6px; overflow: hidden;}
+
+.videoIndex article:hover { background: rgba(255,255,255,0.5);}
+.videoIndex article:hover h2 { color: #000; opacity: 1;}
+
+.videoIndex article.selected { background: rgba(255,255,255,0.5); }
+.videoIndex article.selected h2 { color: #000; opacity: 1;}
+
+.videoIndex header dl { float: right; margin: 0 12px 0 0; padding: 0;}
 .videoIndex header dl dt { display: none; }
-.videoIndex header dl dd { font-weight: 700; float: left; }
+.videoIndex header dl dd { font-weight: 700; padding: 0 0 0 3em; float: left; }
 
 .videoContent {
-	min-height: 45.6em;
+	/*min-height: 45.6em;*/
 	overflow: hidden;
 }
 
 .videoContent .videoDescription {
-	margin: 0 12px 0 0;
-	width: 25%;
-	float: left;
-	}
-
-.videoContent .videoMain {
-	padding: 0 12px;
-	overflow: hidden;
+	width: 50%;
 }
 
 .videoContent .videoDescription p { font-size: 1.4em; }
+
+.videoContent .videoMain {
+	text-align: left;
+	padding: 0 12px;
+	overflow: hidden;
+	min-height: 600px;
+	display: none;
+
+}
+
+.videoIndex article.selected .videoMain {  display: block; }
 
 
 
