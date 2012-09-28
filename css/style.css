@@ -109,18 +109,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* Global Navigation SubMenu */
 
 /* Content */
-.contentFrame {
-	min-height: 57.6em;
-}
+.contentFrame { min-height: 57.6em; }
 
-.content h2 {
-	font-size: 3.0em;
-	line-height: 1.2em;
-	text-transform: uppercase;
-	padding: 18px 12px 24px;
-	margin: 0;
-	opacity: 0.6;
-}
+.content h2 { font-size: 3.0em; line-height: 1.2em; text-transform: uppercase; padding: 18px 12px 24px; margin: 0; opacity: 0.6; }
+
 /* Footer */
 .footerFrame { background-color: #FFF; min-height: 14.4em; }
 .footer { color: #666; padding: 24px 0; }
@@ -193,7 +185,6 @@ background-color: #006699;
 
 
 /* Homepage */
-
 .bodyHome .content h2 { color: #C00; font-size: 6.0em; line-height: 1.2em; letter-spacing: -0.033em; text-transform: none; margin: 0; padding: 0.2166em 0 17px 0.15em; opacity: 0.5; }
 
 .homeSignup, .homeSignup:visited {
@@ -223,6 +214,32 @@ background-color: #006699;
 }
 
 .homeSignup span{ line-height: 1.4em; vertical-align: middle; display: inline-block; text-shadow: 0 -1px 3px rgba(0, 0, 0, 0.35); }
+
+
+/* Videos */
+.videoIndex { }
+.videoIndex h1 { font-size: 3em; line-height: 1em; text-transform: uppercase; padding: 21px 12px; }
+.videoIndex h2 { font-size: 2em; line-height: 1em; text-transform: none; margin: 0 0 0 12px; padding: 0; float: left; min-width: 48%; }
+.videoIndex header { padding: 6px 0 18px; }
+.videoIndex header dl { }
+.videoIndex header dl dt { display: none; }
+.videoIndex header dl dd { font-weight: 700; float: left; }
+
+.videoContent { min-height: 45.6em; overflow: hidden;}
+
+.videoMain {
+	padding: 0 12px;
+	float: right;
+}
+.videoDescription {
+	margin: 0 12px 0 0;
+	width: 25%;
+	float: left;
+	}
+.videoDescription p { font-size: 1.4em; }
+
+
+
 
 /* Debug Grid */
 .debug { background-image: url(../img/grid-1200x24.png); background-repeat: repeat-y; background-position: center top;}
