@@ -225,9 +225,8 @@ background-color: #006699;
 .videoIndex header dl dt { display: none; }
 .videoIndex header dl dd { font-weight: 700; float: left; }
 
-.videoContent { min-height: 45.6em; overflow: hidden; display: none;}
+.videoContent { min-height: 45.6em; overflow: hidden;}
 
-.videoIndex header:hover + .videoContent { display: block;}
 
 .videoMain {
 	padding: 0 12px;
