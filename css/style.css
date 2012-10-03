@@ -114,7 +114,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .content h2, .videoIndex h1 { font-size: 3.0em; line-height: 1.2em; text-transform: uppercase; padding: 18px 12px 24px; margin: 0; opacity: 0.6; }
 
 /* Footer */
-.footerFrame { background-color: #FFF; min-height: 14.4em; }
+.footerFrame { background-color: #FFF; min-height: 9.6em; }
 .footer { color: #666; padding: 24px 0; }
 
 /* Original do basalStyle */
@@ -185,6 +185,9 @@ background-color: #006699;
 
 
 /* Homepage */
+.bodyHome {
+	background: #E6E6E1 url(../img/bkg-aboutus.png) no-repeat 63% 110px ;
+}
 .bodyHome .content h2 { color: #C00; font-size: 6.0em; line-height: 1.2em; letter-spacing: -0.033em; text-transform: none; margin: 0; padding: 0.2166em 0 17px 0.15em; opacity: 0.5; }
 
 .homeSignup, .homeSignup:visited {
@@ -193,7 +196,7 @@ background-color: #006699;
 	font-weight: 700;
 	line-height: 110px;
 	text-transform: uppercase;
-	margin: 1em auto;
+	margin: 1em 0 1em 5em;
 	padding: 10px;
 	height: 115px;
 	width: 115px;
@@ -202,15 +205,15 @@ background-color: #006699;
 	border-radius: 80px;
 	text-align: center;
 	background: #0099cc;
-	/*background: -moz-radial-gradient(50% 50%, circle closest-corner, #99D6EF 15%, #006699 95%);*/
-	/*background: -webkit-radial-gradient(center, #99D6EF, #006699 );*/
+	background: -moz-radial-gradient(50% 50%, circle closest-corner, #99D6EF 15%, #006699 95%);
+	background: -webkit-radial-gradient(center, #99D6EF, #006699 );
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
 }
 
 .homeSignup:hover {
 	background-color: #006699;
-	/*background-image: -moz-linear-gradient(#006699, #006699);*/
-	/*background-image: -webkit-linear-gradient(#006699, #006699);*/
+	background-image: -moz-linear-gradient(#006699, #006699);
+	background-image: -webkit-linear-gradient(#006699, #006699);
 }
 
 .homeSignup span{ line-height: 1.4em; vertical-align: middle; display: inline-block; text-shadow: 0 -1px 3px rgba(0, 0, 0, 0.35); }
@@ -261,3 +264,6 @@ background-color: #006699;
 
 
 /* END */
+
+
+
