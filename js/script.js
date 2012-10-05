@@ -7,10 +7,6 @@ $(function(){
 
     $(".header").click(function(e) {  if (e.shiftKey) $(".footerFrame, .contentFrame, .headerFrame").toggleClass("debug"); });
 
-    $('article').click(function() {
-      $(this).toggleClass('selected');
-      $(this).find('.videoMain').toggle();
-	});
 
 });
 
