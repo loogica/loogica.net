@@ -24,7 +24,8 @@ h4 { font-size: 1.2em; line-height: 1.666em; }
 
 h1 + article > header > h2, h1 + h2 { padding-top: 0.111em; }
 
-p, li, dt, dd, th, td, caption  { font-size: 1.6em; line-height: 1.5em;}
+p, li, dt, dd, th, td, caption, pre  { font-size: 1.6em; line-height: 1.5em;}
+
 li li, li p, li h1, li h3, li h4 { font-size: 1em;}
 
 p {padding: 0 24px 14px 12px; margin: 0 0 10px;}
@@ -239,25 +240,27 @@ background-color: #006699;
 .videoIndex header dl dt { display: none; }
 .videoIndex header dl dd { font-weight: 700; padding: 0 0 0 3em; float: left; }
 
-.videoContent {
-	overflow: hidden;
-}
+.videoContent { overflow: hidden; }
 
-.videoContent .videoDescription {
-	width: 50%;
-}
+.videoContent .videoDescription { width: 50%; }
 
 .videoContent .videoDescription p { font-size: 1.4em; line-height: 1.7142em; margin: 0 0 9px; padding: 0 12px 9px;}
 
-.videoContent .videoMain {
-	text-align: center;
-	padding: 30px 12px 0;
-	overflow: hidden;
-	min-height: 600px;
-	display: none;
-	background: #222;
-}
+.videoContent .videoMain { text-align: center; padding: 30px 12px 0; overflow: hidden; min-height: 600px; display: none; background: #222; }
 
+
+.post pre {
+    color: #000000;
+    font-family: 'Inconsolata',monospace,serif;
+    margin: -1em 12px 1em;
+    padding: 0.25em 0 0.25em 20px;
+    width: 32em;
+    display: inline-block;
+    overflow-x: auto;
+    border-left: 0 solid #0E94EC;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) inset, 0 1px 0 rgba(255, 255, 255, 0.6);
+    background-color: #EEEEEE;
+}
 
 /* Debug Grid */
 .debug { background-image: url(../img/grid-1200x24.png); background-repeat: repeat-y; background-position: center top;}
