@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}{{ page.title }}{%endblock%}
+
+{% block content %}
+  <dl>
+    <ol>
+      <li>
+        <h1 class="page title">
+          <a href="{{ SITEURL }}/{{ page.url }}" rel="bookmark" title="Permalink to {{ page.title }}">{{ page.title }}</a>
+      </h1>
+      <abbr class="published" title="{{ page.date.isoformat() }}">{{ page.locale_date }}</abbr>
+      <div class="page entry-content"> {{ page.content }} </div>
+    </li>
+  </ol>
+</dl>
+{% endblock %}
