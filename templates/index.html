@@ -1,18 +1,32 @@
 {% extends "base.html" %}
 {% block content %}
   {% include "header.html" %}
-  <dl>
-    <ol>
-    {% for article in articles_page.object_list %}
-      <li>
-        <h1 class="title">
-          <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title }}">{{ article.title }}</a>
-        </h1>
-        <abbr class="published" title="{{ article.date.isoformat() }}">{{ article.locale_date }}</abbr>
-        <div class="entry-content">{{ article.short_description }}</div>
-      </li>
-    {% endfor %}
-    </ol>
-  </dl>
+  <div class="contentFrame row">
+    <div class="content">
+	  <div class="videoIndex">
+        <section>
+		  <h1>Python</h1>
+          {% for article in articles_page.object_list %}
+            <article class="row">
+              <header>
+                <h2><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"title="Permalink to {{ article.title }}">{{ article.title }}</a></h2>
+                  <dl>
+                      <dt>Autor</dt>
+                      <dd>{{ article.author }}</dd>
+                      <dt>Publicado em</dt>
+                      <dd><abbr class="published" title="{{ article.date.isoformat() }}">{{ article.locale_date }}</abbr></dd>
+                  </dl>
+              </header>
+              <div class="videoContent">
+                <div class="videoDescription">
+                  <p>{{ article.short_description }}</p>
+                </div>
+              </div>
+            </article>
+          {% endfor %}
+		</section>
+	  </div>
+    </div>
+  </div>
   {% include 'pagination.html' %}
 {% endblock content %}
