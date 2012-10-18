@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 
 	{% block head %}
-		<title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+    <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
 	{% endblock head %}
 
 	<!--title>Tutoriais - Loogica - Iniciativa Open Source</title-->
@@ -19,14 +19,15 @@
 
 	<!-- Custom css -->
 	<link href="{{ STATIC_URL }}theme/css/style.css" rel="stylesheet" rel='stylesheet' type='text/css'>
+    <link href="{{ STATIC_URL}}theme/css/pygments.css" rel="stylesheet" rel='stylesheet' type='text/css'>
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	<script>!window.jQuery && document.write(unescape('%3Cscript src="js/jquery-1.7.2.min.js"%3E%3C/script%3E'))</script>
-	<script src="js/script.js"></script>
+	<script>!window.jQuery && document.write(unescape('%3Cscript src="{{ STATIC_URL }}theme/js/jquery-1.7.2.min.js"%3E%3C/script%3E'))</script>
+	<script src="{{ STATIC_URL }}theme/js/script.js"></script>
 	<script type="text/javascript">
 
 	var _gaq = _gaq || [];
@@ -68,88 +69,8 @@
 	<!-- Content
 	================================================== -->
 
-	<div class="contentFrame row">
-		<div class="content">
-			<div class="videoIndex">
-
-        <section id="posts">
-        {% block content %}
-        {% endblock %}
-        </section>
-
-				<!--section>
-					<h1>Python</h1>
-
-					<article class="row">
-						<header class="row">
-							<h2><a href="tutoriais-instancia.html">Uma introdução prática - Parte 1</a></h2>
-							<dl>
-								<dt>Autor</dt>
-								<dd>Felipe Cruz</dd>
-								<dt>Publicado em</dt>
-								<dd>17.08.2012</dd>
-							</dl>
-						</header>
-
-						<div class="videoContent">
-							<div class="videoDescription">
-								<p>O objetivo deste screencast é apresentar um primeiro contato prático com Python.</p>
-							</div>
-
-
-						</div>
-
-
-
-					</article>
-
-					<article class="row">
-						<header>
-							<h2><a href="tutoriais-instancia.html">Uma introdução prática - Parte 2</a></h2>
-							<dl>
-								<dt>Autor</dt>
-								<dd>Felipe Cruz</dd>
-								<dt>Publicado em</dt>
-								<dd>09.09.2012</dd>
-							</dl>
-						</header>
-
-						<div class="videoContent">
-							<div class="videoDescription">
-								<p>Esse screencast básico, parte 2, fala de como executamos programas feitos em python e como configuramos o enconding dos arquivos fonte para usarmos caracteres acentuados da Língua Portuguesa.</p>
-							</div>
-
-
-					</article>
-
-					<article class="row">
-						<header>
-							<h2><a href="tutoriais-instancia.html">Python TDD com pytest - Básico</a></h2>
-							<dl>
-								<dt>Autor</dt>
-								<dd>Vinicius Braga Pereira</dd>
-								<dt>Publicado em</dt>
-								<dd>04.09.2012</dd>
-							</dl>
-						</header>
-						<div class="videoContent">
-							<div class="videoDescription">
-								<p>Demonstração básica de TDD em Python usando Pytest e o plugin de cobertura de código Pytest-cov gerando um relatório html com a cobertura do seu código</p>
-							</div>
-
-
-						</div>
-
-					</article>
-
-
-				</section-->
-			</div>
-
-		</div>
-	</div>
-
-
+    {% block content %}
+    {% endblock %}
 
 <hr>
 
