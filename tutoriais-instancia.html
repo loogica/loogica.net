@@ -74,10 +74,23 @@
 						</header>
 
 
-						<div class="videoContent">
-							<iframe width="724" height="448" src="http://www.youtube.com/embed/A3MnTdpe9u8" frameborder="0" allowfullscreen></iframe>
-						</div>
 
+<div class="videoContent">
+      <iframe width="724" height="448" frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/A3MnTdpe9u8"></iframe>
+</div>
+
+<!--iframe id="video" width="560" height="315" src="http://www.youtube.com/embed/A3MnTdpe9u8" frameborder="0" allowfullscreen>
+</iframe>
+
+<script>
+    $(document).ready(function() {
+        $('#video').fitVids();
+    });
+</script-->
+<div id="conteudo-do-video-em-texto" class="section">
+<h2>Conteúdo do vídeo em texto</h2>
+<p>Esse é um guia textual da introdução prática a linguagem Python.</p>
+</div>
 <div id="primeiros-passos" class="section">
 <h2>Primeiros passos</h2>
 <p>Modo Interativo:</p>
@@ -131,7 +144,7 @@
 <h2>Strings</h2>
 <div id="formas-de-criar" class="section">
 <h3>Formas de criar</h3>
-<pre><span class="gp">&gt;&gt;&gt; </span><span class="n">st</span> <span class="o">=</span> <span class="s">"uma string"</span>
+<div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">st</span> <span class="o">=</span> <span class="s">"uma string"</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">st</span>
 <span class="go">uma string</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">st</span> <span class="o">=</span> <span class="s">'uma string'</span>
@@ -153,11 +166,11 @@
 <span class="go">       formatada</span>
 
 <span class="go">&gt;&gt;&gt;</span>
-</pre>
+</pre></div>
 </div>
 <div id="operacoes-basicas" class="section">
 <h3>Operações básicas</h3>
-<pre><span class="gp">&gt;&gt;&gt; </span><span class="n">st</span> <span class="o">=</span> <span class="s">"hello "</span>
+<div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">st</span> <span class="o">=</span> <span class="s">"hello "</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">st2</span> <span class="o">=</span> <span class="s">"world"</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="n">st</span> <span class="o">+</span> <span class="n">st2</span><span class="p">)</span>
 <span class="go">hello world</span>
@@ -167,11 +180,11 @@
 <span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">a</span> <span class="o">*</span> <span class="mi">10</span>
 <span class="go">aaaaaaaaaa</span>
 <span class="go">&gt;&gt;&gt;</span>
-</pre>
+</pre></div>
 </div>
 <div id="acesso-aos-dados" class="section">
 <h3>Acesso aos dados</h3>
-<pre><span class="gp">&gt;&gt;&gt; </span><span class="n">st</span> <span class="o">=</span> <span class="s">"uma string"</span>
+<div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">st</span> <span class="o">=</span> <span class="s">"uma string"</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">st</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 <span class="go">'u'</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">st</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
@@ -187,16 +200,16 @@
 <span class="gp">&gt;&gt;&gt; </span><span class="n">st</span><span class="p">[:</span><span class="o">-</span><span class="mi">3</span><span class="p">]</span>
 <span class="go">'uma str'</span>
 <span class="go">&gt;&gt;&gt;</span>
-</pre>
+</pre></div>
 </div>
 <div id="imutabilidade-e-criacao-de-novas-strings" class="section">
 <h3>Imutabilidade e criação de novas strings</h3>
 <p>String em Python são imutáveis. Podemos apenas criar strings a partir de outras,
 nunca muda-las.</p>
-<pre><span class="gp">&gt;&gt;&gt; </span><span class="n">st</span> <span class="o">=</span> <span class="s">"uma string"</span>
+<div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">st</span> <span class="o">=</span> <span class="s">"uma string"</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">st</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="s">" "</span>
 <span class="gt">Traceback (most recent call last):</span>
-File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
 <span class="gr">TypeError</span>: <span class="n">'str' object does not support item assignment</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c"># uma forma, seria converter a string pra bytearray,</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c"># mudar a posicao desejada e converter de volta para</span>
@@ -208,7 +221,7 @@ File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">1</span>, in 
 <span class="gp">...</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="n">troca_letra</span><span class="p">(</span><span class="s">"uma string"</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s">" "</span><span class="p">))</span>
 <span class="gp">... </span><span class="n">um</span>  <span class="n">string</span>
-</pre>
+</pre></div>
 </div>
 <div id="unicode" class="section">
 <h3>Unicode</h3>
@@ -219,7 +232,7 @@ File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">1</span>, in 
 <li>Strings <tt class="docutils literal">str</tt> e unicodes <tt class="docutils literal">unicode</tt> são diferentes.</li>
 <li>Bytes <tt class="docutils literal">bytes</tt> e strings <tt class="docutils literal">str</tt> são a mesma coisa.</li>
 </ul>
-<pre><span class="gp">&gt;&gt;&gt; </span><span class="n">unicode_st</span> <span class="o">=</span> <span class="s">u"hello</span><span class="se">\u0020</span><span class="s">World"</span>
+<div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">unicode_st</span> <span class="o">=</span> <span class="s">u"hello</span><span class="se">\u0020</span><span class="s">World"</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="n">unicode_st</span><span class="p">)</span>
 <span class="go">hello World</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">unicode_st</span><span class="p">)</span>
@@ -235,16 +248,15 @@ File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">1</span>, in 
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">bytes</span> <span class="o">==</span> <span class="nb">str</span>
 <span class="go">True</span>
 <span class="go">&gt;&gt;&gt;</span>
-</pre>
+</pre></div>
 </div>
 <div id="python-3" class="section">
-	<h3>Python 3</h3>
-	<ul class="simple">
-		<li>Strings e Unicodes são a mesma coisa.</li>
-		<li>Quando necessário, converter uma String para array de bytes, usar <tt class="docutils literal"><span class="pre">unicode.encode('codec')</span></tt>.</li>
-	</ul>
-
-<pre><span class="gp">&gt;&gt;&gt; </span><span class="n">unicode_str</span> <span class="o">=</span> <span class="s">u"hello</span><span class="se">\u0020</span><span class="s">world"</span>
+<h3>Python 3</h3>
+<ul class="simple">
+<li>Strings e Unicodes são a mesma coisa.</li>
+<li>Quando necessário, converter uma String para array de bytes, usar <tt class="docutils literal"><span class="pre">unicode.encode('codec')</span></tt>.</li>
+</ul>
+<div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">unicode_str</span> <span class="o">=</span> <span class="s">u"hello</span><span class="se">\u0020</span><span class="s">world"</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="n">unicode_str</span><span class="p">)</span>
 <span class="go">hello world</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">unicode_str</span> <span class="o">==</span> <span class="s">"hello world"</span>
@@ -258,12 +270,13 @@ File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">1</span>, in 
 <span class="gp">&gt;&gt;&gt; </span><span class="n">unicode_str</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">'utf-8'</span><span class="p">)</span> <span class="o">==</span> \
 <span class="go">    bytearray("hello world", "utf-8")</span>
 <span class="go">True</span>
-</pre>
-
+</pre></div>
 </div>
 </div>
 
-					</article>
+
+        </article>
+
 			</div>
 
 		</div>
