@@ -15,7 +15,7 @@ body{
 
 html { background-color: #FFF; }
 
-h1,h2,h3,h4 { margin: 0; padding: 0 12px 0 12px; }
+h1,h2,h3,h4 { margin: 0; padding: 0 24px; }
 
 h1 { font-size: 2.4em; line-height: 1.000em; padding-top: 0.125em; }
 h2 { font-size: 1.8em; line-height: 1.333em; padding-top: 0.277em;}
@@ -292,13 +292,24 @@ background-color: #006699;
 }
 
 /* Post */
+.post header {
+	min-height: 7.2em;
+}
+.post header .category {
+	color: #333;
+	font-size: 1.4em;
+	line-height: 0.8em;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 12px 0 0 24px;
+	opacity: 0.6;
+}
 .post h1 {
-    font-size: 3em;
-    line-height: 1.2em;
-    margin: 0;
-    opacity: 0.6;
-    padding: 18px 12px 24px;
-    text-transform: uppercase;
+	padding: 0 0 0 24px;
+	text-transform: none;
+	 opacity: 1;
 }
 
 .post h2 {
@@ -306,15 +317,14 @@ background-color: #006699;
     line-height: 1.2em;
     margin: 0;
     opacity: 0.6;
-    padding: 18px 12px 17px;
-    text-transform: uppercase;
+    padding: 22px 24px 25px;
 }
 
 .post pre {
 	color: #000000;
 	font-family: 'Inconsolata',monospace,serif;
-	margin: -1em 12px 1em;
-	padding: 0.25em 0 0.25em 20px;
+	margin: 0 24px 1em;
+	padding: 0.5em 0 0.5em 1em;
 	width: 32em;
 	display: inline-block;
 	overflow-x: auto;
@@ -323,13 +333,17 @@ background-color: #006699;
 	background-color: #EEEEEE;
 }
 
+.post p + .highlight { margin-top: -18px; }
+
+.post h3 + .highlight { margin-top: 12px; }
+
 .post .videoContent iframe {
-    width: 724px;
-    height: 448px;
+    width: 640px;
+    height: 360px;
 }
 .post .videoContent {
-	padding: 0 12px;
-	min-height: 526px;
+	padding: 0 24px;
+	min-height: 384px;
 	border: 0px solid rgb(255,0,0);
 }
 
