@@ -112,7 +112,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* Content */
 .contentFrame { min-height: 57.6em; }
 
-.content h2, .videoIndex h1 { font-size: 3.0em; line-height: 1.2em; text-transform: uppercase; padding: 18px 12px 24px; margin: 0; opacity: 0.6; }
+.content h1 { font-size: 2.4em; line-height: 1.2em; text-transform: uppercase; padding: 18px 12px 24px; margin: 0; opacity: 0.6; }
 
 /* Footer */
 .footerFrame { background-color: #FFF; min-height: 9.6em; }
