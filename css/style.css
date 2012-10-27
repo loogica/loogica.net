@@ -183,7 +183,10 @@ background-color: #006699;
 /* Homepage */
 .bodyHome { background: #E6E6E1 url(../img/bkg-aboutus.png) no-repeat 63% 110px; }
 
-.bodyHome .content h2 { color: #C00; font-size: 6.0em; line-height: 1.2em; letter-spacing: -0.033em; text-transform: none; margin: 0; padding: 0.2166em 0 17px 0.15em; opacity: 0.5; }
+.bodyHome .content h2 { color: #C00; font-size: 6.0em; line-height: 1.2em; letter-spacing: -0.033em; text-transform: none; margin: 0; padding: 0.2166em 0 17px 0.35em; opacity: 0.5; }
+
+.bodyHome .content h2 .brk1,
+.bodyHome .content h2 .brk2 { display: block;}
 
 .homeSignup, .homeSignup:visited { color: #FFF; font-size: 1.0em; font-weight: 700; line-height: 110px; text-transform: uppercase; margin: 1em 0 1em 5em; padding: 10px; height: 115px; width: 115px; display: block; border: 6px solid #FFF; border-radius: 80px; text-align: center; background: #0099cc; background: -moz-radial-gradient(50% 50%, circle closest-corner, #99D6EF 15%, #006699 95%); background: -webkit-radial-gradient(center, #99D6EF, #006699 ); box-shadow: 0 0 5px rgba(0, 0, 0, 0.35); }
 
