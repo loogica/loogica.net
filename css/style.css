@@ -7,7 +7,7 @@ body{
 	color:#333;
 	font-size:62.5%;
 	line-height:2.0em;
-	font-family:"HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: Helvetica,Arial,sans-serif;
 	margin:0;
 	padding:0;
 	background-color: #E6E6E1;
@@ -366,17 +366,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	color: #C00;
 	font-size: 5.2em;
 	line-height: 1.2em;
-	letter-spacing: -0.033em;
+	letter-spacing: -1px;
 	text-transform: none;
 	margin: 0;
 	padding: 0.2166em 0 17px 0.46em;
 	opacity: 0.5;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 980px) {
 
 	.bodyHome .content h2 .brk1,
-	.bodyHome .content h2 .brk2 { display: block; }
+	.bodyHome .content h2 .brk2 { display: block; white-space: nowrap; }
 
 }
 
