@@ -13,33 +13,14 @@ body{
 	background-color: #E6E6E1;
 }
 
-html {
-	background-color: #FFF;
-}
+html { background-color: #FFF; }
 
-h1,h2,h3,h4 {
-	margin: 0;
-	padding: 0 24px;
-}
+h1,h2,h3,h4 { margin: 0; padding: 0 24px; }
 
-h1 {
-	font-size: 2.4em;
-	line-height: 1.000em;
-	padding-top: 0.125em;
-}
-h2 {
-	font-size: 1.8em;
-	line-height: 1.333em;
-	padding-top: 0.277em;
-}
-h3 {
-	font-size: 1.6em;
-	line-height: 1.250em;
-}
-h4 {
-	font-size: 1.2em;
-	line-height: 1.666em;
-}
+h1 { font-size: 2.4em; line-height: 1.000em; padding-top: 0.125em; }
+h2 { font-size: 1.8em; line-height: 1.333em; padding-top: 0.277em; }
+h3 { font-size: 1.6em; line-height: 1.250em; }
+h4 { font-size: 1.2em; line-height: 1.666em; }
 
 h1 + article > header > h2, h1 + h2 {
 	padding-top: 0.111em;
@@ -54,130 +35,49 @@ li li, li p, li h1, li h3, li h4 {
 	font-size: 1em;
 }
 
-p {
-	padding: 0 24px 14px;
-	margin: 0 0 10px;
-}
+p { padding: 0 24px 14px; margin: 0 0 10px; }
 
-ul {
-	margin: 0 0 2.4em 0;
-	padding:0 0 0 4em;
-}
-ol {
-	margin: 0 0 2.4em 0;
-	padding:0 0 0 4em;
-}
+ul { margin: 0 0 2.4em 0; padding:0 0 0 4em; }
+ol { margin: 0 0 2.4em 0; padding:0 0 0 4em; }
 
-dl {
-	margin: 0 0 2.4em 0;
-	padding: 0 0 0 1.2em;
-}
-dt {
-	margin: 0 0 0 0;
-	padding: 0 0 0 0;
-	font-weight: 700;
-}
-dd {
-	margin: 0 0 0 0;
-	padding: 0 0 0 1.7em;
-}
+dl { margin: 0 0 2.4em 0; padding: 0 0 0 1.2em; }
+dt { margin: 0 0 0 0; padding: 0 0 0 0; font-weight: 700; }
+dd { margin: 0 0 0 0; padding: 0 0 0 1.7em; }
 
-table {
-	border-collapse: collapse;
-	width: 100%;
-	margin: 0 0 2.0em 12px;
-}
-th, caption {
-	text-align: left;
-	font-weight: 700;
-}
+table { border-collapse: collapse; width: 100%; margin: 0 0 2.0em 12px; }
+th, caption { text-align: left; font-weight: 700; }
 
-blockquote {
-	margin: 0.75em 1.5em;
-}
-blockquote p {
-	text-indent: -0.55em;
-}
+blockquote { margin: 0.75em 1.5em; }
+blockquote p { text-indent: -0.55em; }
 
-em {
-	font-style: normal;
-	color:#f00;
-}
-small {
-	font-size: 1em;
-}
-strong, b {
-	visibility: visible;
-}
+em { font-style: normal; color:#f00; }
+small { font-size: 1em; }
+strong, b { visibility: visible; }
 
-hr {
-	display: none;
-	margin: 0;
-	padding: 0;
-}
-img {
-	vertical-align:middle;
-	border-width:0;
-}
+hr { display: none; margin: 0; padding: 0; }
+img { vertical-align:middle; border-width:0; }
 
-textarea {
-	font-size:1em;
-	margin:0;
-	padding:0;
-	width:95%;
-	border:solid 1px #cdcdcd;
-}
+textarea { font-size:1em; margin:0; padding:0; width:95%; border:solid 1px #cdcdcd; }
 
-a         {
-	color: #006699;
-	text-decoration: none;
-}
-a:visited {
-	color: #006699;
-	text-decoration: none;
-}
-a:hover   {
-	color: #000;
-}
-a:active  {
-	color: #000;
-}
+a         { color: #006699; text-decoration: none; }
+a:visited { color: #006699; text-decoration: none; }
+a:hover   { color: #000; }
+a:active  { color: #000; }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-	display: block;
-}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
 
-.floatLeft {
-	float: left;
-}
-.floatRight {
-	float: right;
-}
+.floatLeft  { float: left; }
+.floatRight { float: right; }
 
-.minHeight {
-	height:300px;
-}
+.minHeight { height:300px; }
 
-.legend {
-	font-size: 11px;
-	line-height: 1.2em;
-	margin: 0;
-	padding: 5px 12px 5px 0;
-}
+.legend { font-size: 11px; line-height: 1.2em; margin: 0; padding: 5px 12px 5px 0; }
 
-.rulerLeft {
-	border-left: 1px solid #E6E6E6;
-	padding-left: 12px;
-}
-.rulerRight {
-	border-right: 1px solid #E6E6E6;
-}
-.rulerTop {
-	border-top: 1px solid #E6E6E6;
-}
-.rulerBottom {
-	border-bottom: 1px solid #E6E6E6;
-}
+.rulerLeft 	  {   border-left: 1px solid #E6E6E6;}
+.rulerRight   {  border-right: 1px solid #E6E6E6; }
+.rulerTop 	  {    border-top: 1px solid #E6E6E6; }
+.rulerBottom  { border-bottom: 1px solid #E6E6E6; }
+
 .rulerShadowTop {
 	background: url(../images/ruler-shadow-h.png) no-repeat scroll center top;
 }
@@ -185,33 +85,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* CSS Grid Framework -- Vinicius Braga --  http://viniciusbraga.com/demo */
 
 /* Columns Flex */
-.col-20 {
-	width: 20%;
-}
-.col-20 {
-	width: 20%;
-}
-.col-25 {
-	width: 25%;
-}
-.col-33 {
-	width: 33%;
-}
-.col-50 {
-	width: 50%;
-}
-.col-66 {
-	width: 66%;
-}
-.col-75 {
-	width: 75%;
-}
-.col-20, .col-25, .col-33, .col-50, .col-66, .col-75 {
-	float: left;
-}
-.row, .col {
-	overflow: hidden;
-}
+.col-20 { width: 20%; }
+.col-20 { width: 20%; }
+.col-25 { width: 25%; }
+.col-33 { width: 33%; }
+.col-50 { width: 50%; }
+.col-66 { width: 66%; }
+.col-75 { width: 75%; }
+.col-20, .col-25, .col-33, .col-50, .col-66, .col-75 { float: left; }
+.row, .col { overflow: hidden; }
 
 
 /* Generic */
