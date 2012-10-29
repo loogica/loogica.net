@@ -115,8 +115,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	border-top: 3px solid #CC0000;
 }
 .header .siteID{
-	padding:0 0 7px 12px;
+	margin: 23px 0 0 12px;
+	padding:0;
 	float:left;
+	width:162px;
+	height:72px;
+	overflow: hidden;
 }
 .header .siteLogo {
 	margin:0;
@@ -126,7 +130,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	text-indent: -9999px;
 	width:162px;
 	height:72px;
-	margin:24px 0 0 0;
+	margin:0;
 	padding:0;
 	display:block;
 	background: transparent url(../img/sitelogo-header.png) no-repeat left top;
