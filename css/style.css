@@ -171,6 +171,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	font-weight: 700;
 }
 
+.navGlobal .showLinks {
+	display: none;
+}
+
 /* Global Navigation SubMenu */
 
 /* Content */
@@ -352,6 +356,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .submitButton:active {
 	position: relative;
 	top: 2px;
+}
+
+.icn17 {
+	width: 17px;
+	height: 17px;
+	display: inline-block;
+	background-color: transparent;
+	background-image: url(../img/icn-17.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
 
 /* Fim basalStyle */
@@ -559,16 +573,213 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	margin-top: 12px;
 }
 
-.post .videoContent iframe {
-	width: 640px;
-	height: 360px;
-}
 .post .videoContent {
 	padding: 0 24px;
 	min-height: 384px;
 	border: 0px solid rgb(255,0,0);
 }
 
+/* Style adjustments for viewports 768px and over go here */
+@media only screen and (max-width: 768px) {
+
+	body { font-size: 100%; }
+
+	p, li, dt, dd, th, td, caption, pre  {
+		font-size: 100%;
+		line-height: 1.5em;
+	}
+
+	ul { margin: 0 0 2.4em 0; padding:0 0 0 2.4em; }
+	ol { margin: 0 0 2.4em 0; padding:0 0 0 2.4em; }
+
+  	.col-20, .col-25, .col-30, .col-33, .col-50, .col-60, .col-66, .col-75 { width: 100%; float: none; }
+
+  	.headerFrame {
+  		height: auto;
+  		position: relative;
+  		overflow: visible;
+  	}
+
+  	.header .siteID {
+  		width: auto;
+	    margin: 23px 0 0 12px;
+  		float: left;
+  	}
+
+	/* Global Navigation */
+	.navGlobal {
+		padding: 0;
+		width: 100%;
+		height: 24px;
+		position: absolute;
+		top:0;
+		background-color: #a80e00;
+		z-index: 9000;
+	}
+
+	.navGlobal ul {
+		font-size: 1em;
+		margin: 0 0 10px ;
+		padding: 0;
+		list-style:none;
+		display: none;
+	    position: absolute;
+	    right: 12px;
+	    top: 24px;
+		background: #FFF;
+	}
+
+	.navGlobal li {
+		font-size: 1em;
+		margin: 0;
+		padding: 0;
+		float: none;
+	}
+	.navGlobal a  {
+		font-size: 16px;
+		font-weight: 400;
+		text-align: right;
+		margin: 3px;
+		padding: 10px 12px 7px;
+		display:block;
+	}
+	.navGlobal a:hover {
+		color:#666;
+		background: #f3f3ec;
+	}
+	.navGlobal .selected > a {
+		color:#000;
+		font-weight: 700;
+	}
+	.navGlobal:hover ul {
+		display: block;
+	}
+	.navGlobal .showLinks {
+		width: 24px;
+		height: 24px;
+		display: block;
+	    position: absolute;
+	    right: 12px;
+	    top: 0;
+	}
+	.navGlobal:hover .showLinks {
+		background-color: #FFF;
+	}
+	.navGlobal .showLinks .icn17 {
+		margin: 3px 3px;
+		background-position: 0 -34px;
+	}
+	.navGlobal:hover .showLinks .icn17 {
+		margin: 3px 3px;
+		background-position: 0 -0;
+	}
+
+
+	/* Homepage */
+
+	.bodyHome .content h2 {
+		font-size: 150%;
+		padding: 0.5em 23px;
+	}
+
+	/* Content */
+	.contentFrame {
+		min-height: auto;
+	}
+
+	.content h1 { font-size: 125%; }
+	.content h2 { font-size: 100%; }
+	.content h3 { font-size: 100%; }
+	.content h1, .content h2, .content h3 { padding: 0.5em 23px;  }
+
+
+	.videoIndex h2 {
+	    padding: 0.5em 23px 0;
+	    margin: 0;
+	    float: none;
+	}
+	.videoIndex header dl {
+	    float: none;
+	    margin: 0 24px;
+	    padding: 0;
+	}
+
+	.videoIndex header dl dd {
+	    font-size: small;
+	    float: left;
+        padding: 0 1em 0 0;
+	}
+	.videoContent .videoDescription {
+	    width: 100%;
+	}
+	.videoContent .videoDescription p {
+	    font-size: small;
+	    line-height: 1.4;
+	    margin: 0 0 9px;
+	    padding: 0 24px 8px;
+	}
+
+	.post header {
+       min-height: auto;
+	}
+
+	.post header .category {
+	    color: #333333;
+	    font-size: small;
+	    letter-spacing: 0.1em;
+	    line-height: 0.8em;
+	    margin: 0;
+	    opacity: 0.6;
+
+	    text-transform: uppercase;
+	}
+
+	.post .videoContent {
+	    min-height: 60%;
+	    padding: 0 24px;
+	}
+
+	.post pre {
+	    color: #000000;
+	    font-size: small;
+	    font-family: 'Inconsolata',monospace,serif;
+	    margin: 0 24px 1em;
+	    padding: 0.5em 0 0.5em 1em;
+	    overflow-x: auto;
+	    width: 86%;
+	    border-left: 0 solid #0E94EC;
+	    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) inset, 0 1px 0 rgba(255, 255, 255, 0.6);
+	    display: inline-block;
+	    background-color: #EEEEEE;
+	}
+
+	/* Forms */
+	.formRow {
+	    margin: 0;
+	    padding: 0 24px 1.2em;
+	}
+
+	.formRow label, .formRow legend {
+	    font-size: 1em;
+	    font-weight: 700;
+	    line-height: 1.5em;
+	}
+
+	.formRow .errorList li {
+	    font-size: small;
+	}
+
+	.inputText input {
+	    display: block;
+	    font-size: medium;
+	    line-height: 1em;
+	    margin: 6px 0;
+	    padding: 0.5em 0.5em;
+	}
+
+
+}
+/* End media only screen and (max-width: 768px) */
 
 /* Debug Grid */
 .debug {
@@ -576,6 +787,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	background-repeat: repeat-y;
 	background-position: center top;
 }
+
 
 
 /* END */
