@@ -20,6 +20,7 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script>!window.jQuery && document.write(unescape('%3Cscript src="js/jquery-1.7.2.min.js"%3E%3C/script%3E'))</script>
 	<script src="js/script.js"></script>
+	<script src="js/jquery.fitvids.js"></script>
 	<script type="text/javascript">
 
 	var _gaq = _gaq || [];
@@ -79,17 +80,15 @@
 
 
 <div class="videoContent">
-      <iframe width="724" height="448" frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/A3MnTdpe9u8"></iframe>
+      <iframe id="video" width="560" height="315" src="http://www.youtube.com/embed/A3MnTdpe9u8" frameborder="0" allowfullscreen></iframe>
 </div>
-
-<!--iframe id="video" width="560" height="315" src="http://www.youtube.com/embed/A3MnTdpe9u8" frameborder="0" allowfullscreen>
-</iframe>
 
 <script>
     $(document).ready(function() {
-        $('#video').fitVids();
+        $('.videoContent').fitVids();
     });
-</script-->
+</script>
+
 <div id="conteudo-do-video-em-texto" class="section">
 <h2>Conteúdo do vídeo em texto</h2>
 <p>Esse é um guia textual da introdução prática a linguagem Python.</p>
