@@ -6,7 +6,7 @@ Description: Site Loogica.
 body{
 	color:#333;
 	font-size:62.5%;
-	line-height:2.0em;
+	line-height: 1.25em;
 	font-family: Helvetica,Arial,sans-serif;
 	margin:0;
 	padding:0;
@@ -201,6 +201,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	padding: 24px 0;
 }
 
+.footer p, .footer li {
+	font-size: 1.2em;
+}
+
+.footer .formRow label, .footer .formRow legend {
+    font-size: 1.2em;
+    line-height: 1.3em;
+}
+
 /* Original do basalStyle */
 
 /* Forms */
@@ -211,7 +220,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 .submitRow {
 	margin: 0;
-	padding: 8px 12px 0 12px;
+	padding: 8px 2.4em 0;
 }
 .formRow label,.formRow legend {
 	color: #333;
@@ -584,13 +593,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 	body { font-size: 100%; }
 
+	h1, h2, h3, h4 {
+	    margin: 0;
+	    padding: 0 12px;
+	}
+
 	p, li, dt, dd, th, td, caption, pre  {
 		font-size: 100%;
 		line-height: 1.5em;
+		padding: 0 12px 14px;
 	}
 
-	ul { margin: 0 0 2.4em 0; padding:0 0 0 2.4em; }
-	ol { margin: 0 0 2.4em 0; padding:0 0 0 2.4em; }
+	li {
+		padding: 0 12px 14px 0;
+	}
+
+	ul { margin: 0 0 1.2em 0; padding:0 0 0 26px; }
+	ol { margin: 0 0 1.2em 0; padding:0 0 0 26px; }
 
   	.col-20, .col-25, .col-30, .col-33, .col-50, .col-60, .col-66, .col-75 { width: 100%; float: none; }
 
@@ -602,7 +621,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
   	.header .siteID {
   		width: auto;
-	    margin: 23px 0 0 12px;
+	    margin: 23px 0 0 1px;
   		float: left;
   	}
 
@@ -679,7 +698,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 	.bodyHome .content h2 {
 		font-size: 150%;
-		padding: 0.5em 23px;
+		padding: 0.5em 12px;
 	}
 
 	/* Content */
@@ -690,17 +709,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	.content h1 { font-size: 125%; }
 	.content h2 { font-size: 100%; }
 	.content h3 { font-size: 100%; }
-	.content h1, .content h2, .content h3 { padding: 0.5em 23px;  }
+	.content h1, .content h2, .content h3 { padding: 0.5em 12px;  }
 
 
 	.videoIndex h2 {
-	    padding: 0.5em 23px 0;
+	    padding: 0.5em 12px 0;
 	    margin: 0;
 	    float: none;
 	}
 	.videoIndex header dl {
 	    float: none;
-	    margin: 0 24px;
+	    margin: 0 12px;
 	    padding: 0;
 	}
 
@@ -716,7 +735,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	    font-size: small;
 	    line-height: 1.4;
 	    margin: 0 0 9px;
-	    padding: 0 24px 8px;
+	    padding: 0 12px 8px;
 	}
 
 	.post header {
@@ -730,33 +749,42 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	    line-height: 0.8em;
 	    margin: 0;
 	    opacity: 0.6;
-
+		padding: 12px 12px 0;
 	    text-transform: uppercase;
 	}
 
 	.post .videoContent {
 	    min-height: 60%;
-	    padding: 0 24px;
+	    padding: 0 12px;
 	}
 
 	.post pre {
 	    color: #000000;
 	    font-size: small;
 	    font-family: 'Inconsolata',monospace,serif;
-	    margin: 0 24px 1em;
+	    margin: 0 12px 1em;
 	    padding: 0.5em 0 0.5em 1em;
 	    overflow-x: auto;
 	    width: 86%;
 	    border-left: 0 solid #0E94EC;
 	    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) inset, 0 1px 0 rgba(255, 255, 255, 0.6);
 	    display: inline-block;
-	    background-color: #EEEEEE;
+	    background-color: #FFF;
+	}
+
+	.footer {
+		font-size: small;
 	}
 
 	/* Forms */
 	.formRow {
 	    margin: 0;
-	    padding: 0 24px 1.2em;
+	    padding: 0 12px 1.2em;
+	}
+
+	.submitRow {
+		margin: 0;
+		padding: 0 12px 0;
 	}
 
 	.formRow label, .formRow legend {
