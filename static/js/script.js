@@ -7,6 +7,15 @@ $(function(){
 
     $(".header").click(function(e) {  if (e.shiftKey) $(".footerFrame, .contentFrame, .headerFrame").toggleClass("debug"); });
 
+	if ( $('.homeSignup').length ) {
+
+		$(window).resize(function() {
+			bodyhomeImgPos();
+		});
+
+		bodyhomeImgPos();
+
+	}
 
 });
 
@@ -22,4 +31,17 @@ function trackEvent(category, action, redirectTo)
       _gaq.push(['_trackEvent', category, action]);
       // alert( 'tracked event: ' + category + ', ' + action)
     }catch(err){}
+}
+
+function bodyhomeImgPos() {
+
+	offsetSignupButton = $('.homeSignup').offset();
+
+	bodyHome_img_pos_x = Math.floor( offsetSignupButton.left - 721 );
+	bodyHome_img_pos_y = Math.floor( offsetSignupButton.top  - 240 );
+
+	bodyHome_img_pos = bodyHome_img_pos_x + "px " + bodyHome_img_pos_y + "px";
+
+	$('.bodyHome').css('backgroundPosition', bodyHome_img_pos );
+
 }
