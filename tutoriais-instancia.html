@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<title>Tutoriais - Loogica - Iniciativa Open Source</title>
+
+	<meta name = "viewport" content = "width=device-width">
+
+	<meta name="description" content="Promovemos a colaboração na criação de Software Open Source entre estudantes, desenvolvedores, empresas e outros grupos no Brasil.">
+	<meta name="author" content="Felipe Cruz">
+
+	<!-- Custom css -->
+	<link href="css/style.css" rel="stylesheet" rel='stylesheet' type='text/css'>
+	<link href="css/pygments.css" rel="stylesheet" rel='stylesheet' type='text/css'>
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>!window.jQuery && document.write(unescape('%3Cscript src="js/jquery-1.7.2.min.js"%3E%3C/script%3E'))</script>
+	<script src="js/script.js"></script>
+	<script src="js/jquery.fitvids.js"></script>
+	<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-1152054-2']);
+	_gaq.push(['_setDomainName', 'loogica.net']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+	  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+	</script>
+</head>
+<body class="bodyPost">
+
+	<!-- Header
+	================================================== -->
+	<div class="headerFrame row">
+
+		<header class="header row">
+			<div class="siteID">
+				<hgroup>
+					<h1 class="siteLogo"><a href="index.html">Loogica</a></h1>
+					<h2 class="siteTagline">Iniciativa Open Source</h2>
+				</hgroup>
+			</div>
+
+			<nav class="navGlobal">
+				<span class="showLinks"><span class="icn17"></span></span>
+				<ul>
+					<li class="selected current_page_item"><a href="tutoriais.html">Tutoriais</a></li>
+					<li><a href="index.html">Sobre Loogica</a></li>
+				</ul>
+			</nav>
+		</header>
+
+	</div>
+
+<hr>
+
+	<!-- Content
+	================================================== -->
+
+	<div class="contentFrame row">
+		<div class="content">
+			<div class="post">
+
+					<article>
+						<header>
+							<p class="category">Python</p>
+							<h1 id="title">Uma introdução prática - Parte 1</h1>
+
+						</header>
+
+
+
+<div class="videoContent">
+      <iframe id="video" width="560" height="315" src="http://www.youtube.com/embed/A3MnTdpe9u8" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $('.videoContent').fitVids();
+    });
+</script>
+
+<div id="conteudo-do-video-em-texto" class="section">
+<h2>Conteúdo do vídeo em texto</h2>
+<p>Esse é um guia textual da introdução prática a linguagem Python.</p>
+</div>
+<div id="primeiros-passos" class="section">
+<h2>Primeiros passos</h2>
+<p>Modo Interativo:</p>
+<div class="highlight"><pre><span class="nv">$ </span>python
+</pre></div>
+<p>Pasando Argumentos:</p>
+<div class="highlight"><pre><span class="nv">$ </span>python meu_programa.py arg1 arg2
+</pre></div>
+<p>Recebendo no programa meu_programa.py:</p>
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">sys</span>
+<span class="n">lista_argumentos</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span>
+<span class="k">print</span><span class="p">(</span><span class="n">lista_argumentos</span><span class="p">)</span>
+</pre></div>
+<p>Usando o arquivo criado na etapa anterior:</p>
+<div class="highlight"><pre><span class="nv">$ </span>python meu_programa.py teste
+<span class="o">[</span><span class="s1">'meu_programa.py'</span>, <span class="s1">'teste'</span><span class="o">]</span>
+</pre></div>
+</div>
+<div id="numeros" class="section">
+<h2>Números</h2>
+<div id="inteiros" class="section">
+<h3>Inteiros</h3>
+<p>Divisão de inteiros retorna inteiro arredondado para baixo.</p>
+<div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="mi">1</span>
+<span class="go">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mi">7</span><span class="o">/</span><span class="mi">2</span>
+<span class="go">3</span>
+</pre></div>
+</div>
+<div id="pontos-flutuantes" class="section">
+<h3>Pontos Flutuantes</h3>
+<p>Misturar inteiros e floats converte o inteiro pra float.</p>
+<div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="mf">7.0</span>
+<span class="go">7.0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mf">7.0</span><span class="o">/</span><span class="mi">2</span>
+<span class="go">3.5</span>
+</pre></div>
+</div>
+<div id="complexos" class="section">
+<h3>Complexos</h3>
+<div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="mi">3j</span><span class="p">)</span>
+<span class="go">(1+3j)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="mi">3j</span><span class="p">)</span><span class="o">.</span><span class="n">imag</span>
+<span class="go">3.0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="mi">3j</span><span class="p">)</span><span class="o">.</span><span class="n">real</span>
+<span class="go">1.0</span>
+</pre></div>
+</div>
+</div>
+<div id="strings" class="section">
+<h2>Strings</h2>
+<div id="formas-de-criar" class="section">
+<h3>Formas de criar</h3>
+<div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">st</span> <span class="o">=</span> <span class="s">"uma string"</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">st</span>
+<span class="go">uma string</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">st</span> <span class="o">=</span> <span class="s">'uma string'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">st</span>
+<span class="go">uma string</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">st</span> <span class="o">=</span> <span class="s">"uma 'string'"</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">st</span>
+<span class="go">uma 'string'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">st</span> <span class="o">=</span> <span class="s">'uma "string"'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">st</span>
+<span class="go">uma "string"</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">st</span> <span class="o">=</span> <span class="s">"""</span>
+<span class="gp">... </span><span class="s">string formatada</span>
+<span class="gp">... </span><span class="s">       formatada</span>
+<span class="gp">... </span><span class="s">"""</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">st</span>
+
+<span class="go">string formatada</span>
+<span class="go">       formatada</span>
+
+<span class="go">&gt;&gt;&gt;</span>
+</pre></div>
+</div>
+<div id="operacoes-basicas" class="section">
+<h3>Operações básicas</h3>
+<div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">st</span> <span class="o">=</span> <span class="s">"hello "</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">st2</span> <span class="o">=</span> <span class="s">"world"</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="n">st</span> <span class="o">+</span> <span class="n">st2</span><span class="p">)</span>
+<span class="go">hello world</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">((</span><span class="n">st</span> <span class="o">+</span> <span class="n">st2</span><span class="p">)</span> <span class="o">*</span> <span class="mi">3</span><span class="p">)</span>
+<span class="go">hello worldhello worldhello world</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="s">"a"</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">a</span> <span class="o">*</span> <span class="mi">10</span>
+<span class="go">aaaaaaaaaa</span>
+<span class="go">&gt;&gt;&gt;</span>
+</pre></div>
+</div>
+<div id="acesso-aos-dados" class="section">
+<h3>Acesso aos dados</h3>
+<div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">st</span> <span class="o">=</span> <span class="s">"uma string"</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">st</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="go">'u'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">st</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="go">'m'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">st</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>
+<span class="go">'um'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">st</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
+<span class="go">'uma'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">st</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="go">'g'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">st</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">:]</span>
+<span class="go">'ing'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">st</span><span class="p">[:</span><span class="o">-</span><span class="mi">3</span><span class="p">]</span>
+<span class="go">'uma str'</span>
+<span class="go">&gt;&gt;&gt;</span>
+</pre></div>
+</div>
+<div id="imutabilidade-e-criacao-de-novas-strings" class="section">
+<h3>Imutabilidade e criação de novas strings</h3>
+<p>String em Python são imutáveis. Podemos apenas criar strings a partir de outras,
+nunca muda-las.</p>
+<div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">st</span> <span class="o">=</span> <span class="s">"uma string"</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">st</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="s">" "</span>
+<span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">"&lt;stdin&gt;"</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">TypeError</span>: <span class="n">'str' object does not support item assignment</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># uma forma, seria converter a string pra bytearray,</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># mudar a posicao desejada e converter de volta para</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># string</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">troca_letra</span><span class="p">(</span><span class="n">palavra</span><span class="p">,</span> <span class="n">posicao</span><span class="p">,</span> <span class="n">letra_nova</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="n">nova_palavra</span> <span class="o">=</span> <span class="nb">bytearray</span><span class="p">(</span><span class="n">palavra</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="n">nova_palavra</span><span class="p">[</span><span class="n">posicao</span><span class="p">]</span> <span class="o">=</span> <span class="n">letra_nova</span>
+<span class="gp">... </span>    <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">nova_palavra</span><span class="p">)</span>
+<span class="gp">...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="n">troca_letra</span><span class="p">(</span><span class="s">"uma string"</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s">" "</span><span class="p">))</span>
+<span class="gp">... </span><span class="n">um</span>  <span class="n">string</span>
+</pre></div>
+</div>
+<div id="unicode" class="section">
+<h3>Unicode</h3>
+</div>
+<div id="na-serie-2-x" class="section">
+<h3>Na série 2.x</h3>
+<ul class="simple">
+<li>Strings <tt class="docutils literal">str</tt> e unicodes <tt class="docutils literal">unicode</tt> são diferentes.</li>
+<li>Bytes <tt class="docutils literal">bytes</tt> e strings <tt class="docutils literal">str</tt> são a mesma coisa.</li>
+</ul>
+<div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">unicode_st</span> <span class="o">=</span> <span class="s">u"hello</span><span class="se">\u0020</span><span class="s">World"</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="n">unicode_st</span><span class="p">)</span>
+<span class="go">hello World</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">unicode_st</span><span class="p">)</span>
+<span class="go">&lt;type 'unicode'&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">unicode_st</span> <span class="o">==</span> <span class="s">"hello world"</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="s">"hello world"</span><span class="p">)</span>
+<span class="go">&lt;type 'str'&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="n">unicode_st</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">'utf-8'</span><span class="p">))</span>
+<span class="go">hello World</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">unicode_st</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">'utf-8'</span><span class="p">))</span>
+<span class="go">&lt;type 'str'&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">bytes</span> <span class="o">==</span> <span class="nb">str</span>
+<span class="go">True</span>
+<span class="go">&gt;&gt;&gt;</span>
+</pre></div>
+</div>
+<div id="python-3" class="section">
+<h3>Python 3</h3>
+<ul class="simple">
+<li>Strings e Unicodes são a mesma coisa.</li>
+<li>Quando necessário, converter uma String para array de bytes, usar <tt class="docutils literal"><span class="pre">unicode.encode('codec')</span></tt>.</li>
+</ul>
+<div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">unicode_str</span> <span class="o">=</span> <span class="s">u"hello</span><span class="se">\u0020</span><span class="s">world"</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="n">unicode_str</span><span class="p">)</span>
+<span class="go">hello world</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">unicode_str</span> <span class="o">==</span> <span class="s">"hello world"</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">unicode_str</span><span class="p">)</span>
+<span class="go">&lt;class 'str'&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="s">"hello world"</span><span class="p">)</span>
+<span class="go">&lt;class 'str'&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="n">unicode_str</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">'utf-8'</span><span class="p">))</span>
+<span class="go">b'hello world'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">unicode_str</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">'utf-8'</span><span class="p">)</span> <span class="o">==</span> \
+<span class="go">    bytearray("hello world", "utf-8")</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</div>
+
+
+        </article>
+
+			</div>
+
+		</div>
+	</div>
+
+
+
+<hr>
+
+	<!-- Footer
+	================================================== -->
+	<div class="footerFrame row">
+		<footer role="contentinfo" class="footer row">
+
+			<div class="row">
+
+	            <section class="about col-33">
+	                <h4>Loogica - Iniciativa Open Source</h4>
+	                <p>A Loogica promove a colaboração na criação de Software Open Source entre estudantes, desenvolvedores, empresas e outros grupos no Brasil.</p>
+	            </section>
+
+	            <section class="contact col-33">
+	                <h4>Faça Contato</h4>
+	                <ul>
+	                    <li class="email"><abbr title="Email">Email:</abbr> <a href="mailto:contato@loogica.net">contato@loogica.net</a></li>
+	                    <li class="tel">
+	                        <abbr title="Telefones">Telefones:</abbr>
+	                        <div>
+	                            <abbr title="Rio de Janeiro">RJ</abbr> <a href="tel:+441159799807">11 9999-9999</a><br>
+	                            <abbr title="São Paulo">SP</abbr> <a href="tel:+12814077505">21 9999-9999</a>
+	                        </div>
+	                    </li>
+	                    <li><a href="">Síga-nos no Twitter</a></li>
+	                    <li><a href="">Visite o nosso Facebook</a></li>
+	                </ul>
+	            </section>
+
+	            <section class="newsletter col">
+	                <h4>Newsletter</h4>
+	                <form method="post" action="#" >
+	                	<div class="formRow inputText">
+	                        <label for="id_newsletter">Assine a newsletter para acompanhar o nosso trabalho.</label>
+	                        <input type="email" class="required email">
+	                        <button class="submitButton" type="submit">Sign up</button>
+	                	</div>
+
+	                </form>
+	            </section>
+
+			</div>
+
+
+            <p><small><a class="scroll_to_top" href="#top">Seguir para o Topo</a></small> </p>
+
+
+
+		</footer>
+	</div>
+
+
+</body>
+</html>

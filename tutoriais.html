@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
 	<meta charset="utf-8">
-	<title>Loogica - Iniciativa Open Source</title>
+	<title>Tutoriais - Loogica - Iniciativa Open Source</title>
 
 	<meta name = "viewport" content = "width=device-width">
 
@@ -27,17 +27,14 @@
 	_gaq.push(['_trackPageview']);
 
 	(function() {
-	var ga = document.createElement('script');
-	ga.type = 'text/javascript';
-	ga.async = true;
-	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	var s = document.getElementsByTagName('script')[0];
-	s.parentNode.insertBefore(ga, s);
-})();
+	  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
 
 	</script>
 </head>
-<body class="bodyHome">
+<body>
 
 	<!-- Header
 	================================================== -->
@@ -54,8 +51,8 @@
 			<nav class="navGlobal">
 				<span class="showLinks"><span class="icn17"></span></span>
 				<ul>
-					<li><a href="tutoriais.html">Tutorials</a></li>
-					<li class="selected current_page_item"><a href="index.html">Sobre Loogica</a></li>
+					<li class="selected current_page_item"><a href="tutoriais.html">Tutoriais</a></li>
+					<li><a href="index.html">Sobre Loogica</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -66,39 +63,77 @@
 
 	<!-- Content
 	================================================== -->
+
 	<div class="contentFrame row">
-		<div class="content row">
+		<div class="content">
+			<div class="videoIndex">
 
-			<article>
-				<header class="row">
-					<h2>
-						<span class="brk1">Nós temos como objetivo</span> <span class="brk2">promover a criação de software</span> Open Source no Brasil
-					</h2>
-				</header>
+				<section>
 
-				<div class="row">
-					<div class="col-50">
+					<h1>Python</h1>
 
-						<p>Queremos criar e desenvolver uma cultura de colaboração e pesquisa pra que a nossa criatividade se some a técnica levando a criação de soluções livres que poderão ajudar outros profissionais a criar soluções para problemas do "mundo real".</p>
+					<article class="row">
+						<header class="row">
+							<h2><a href="tutoriais-instancia.html">Uma introdução prática - Parte 1</a></h2>
+							<dl>
+								<dt>Autor</dt>
+								<dd>Felipe Cruz</dd>
+								<dt>Publicado em</dt>
+								<dd class="date">17.08.2012</dd>
+							</dl>
+						</header>
 
-						<p>A nossa idéia é atuar com estudantes, desenvolvedores e com outros grupos ou empresas que promovem a criação de tecnologia nacional.</p>
+						<div class="videoContent">
+							<div class="videoDescription">
+								<p>O objetivo deste screencast é apresentar um primeiro contato prático com Python.</p>
+							</div>
+						</div>
 
-						<p>A Loogica é a soma do software open source com a cultura de colaboração.</p>
+					</article>
 
-					</div>
-					<div class="col-30">
+					<article class="row">
+						<header>
+							<h2><a href="tutoriais-instancia-02.html">Uma introdução prática - Parte 2</a></h2>
+							<dl>
+								<dt>Autor</dt>
+								<dd>Felipe Cruz</dd>
+								<dt>Publicado em</dt>
+								<dd class="date">09.09.2012</dd>
+							</dl>
+						</header>
 
-						<p><a href="quero-participar.html" class="homeSignup"><span>Quero Participar</span></a></p>
+						<div class="videoContent">
+							<div class="videoDescription">
+								<p>Esse screencast básico, parte 2, fala de como executamos programas feitos em python e como configuramos o enconding dos arquivos fonte para usarmos caracteres acentuados da Língua Portuguesa.</p>
+							</div>
+						</div>
 
-					</div>
+					</article>
 
+					<article class="row">
+						<header>
+							<h2><a href="tutoriais-instancia-03.html">Python TDD com pytest - Básico</a></h2>
+							<dl>
+								<dt>Autor</dt>
+								<dd>Vinicius Braga Pereira</dd>
+								<dt>Publicado em</dt>
+								<dd class="date">04.09.2012</dd>
+							</dl>
+						</header>
+						<div class="videoContent">
+							<div class="videoDescription">
+								<p>Demonstração básica de TDD em Python usando Pytest e o plugin de cobertura de código Pytest-cov gerando um relatório html com a cobertura do seu código</p>
+							</div>
+						</div>
 
-				</div>
+					</article>
 
-			</article>
+				</section>
 
+			</div>
 		</div>
 	</div>
+
 
 
 <hr>
@@ -152,12 +187,6 @@
 
 		</footer>
 	</div>
-
-
-<!-- begin olark code --><script data-cfasync="false" type='text/javascript'>/*{literal}<![CDATA[*/
-window.olark||(function(c){var f=window,d=document,l=f.location.protocol=="https:"?"https:":"http:",z=c.name,r="load";var nt=function(){f[z]=function(){(a.s=a.s||[]).push(arguments)};var a=f[z]._={},q=c.methods.length;while(q--){(function(n){f[z][n]=function(){f[z]("call",n,arguments)}})(c.methods[q])}a.l=c.loader;a.i=nt;a.p={0:+new Date};a.P=function(u){a.p[u]=new Date-a.p[0]};function s(){a.P(r);f[z](r)}f.addEventListener?f.addEventListener(r,s,false):f.attachEvent("on"+r,s);var ld=function(){function p(hd){hd="head";return["<",hd,"></",hd,"><",i,' onl' + 'oad="var d=',g,";d.getElementsByTagName('head')[0].",j,"(d.",h,"('script')).",k,"='",l,"//",a.l,"'",'"',"></",i,">"].join("")}var i="body",m=d[i];if(!m){return setTimeout(ld,100)}a.P(1);var j="appendChild",h="createElement",k="src",n=d[h]("div"),v=n[j](d[h](z)),b=d[h]("iframe"),g="document",e="domain",o;n.style.display="none";m.insertBefore(n,m.firstChild).id=z;b.frameBorder="0";b.id=z+"-loader";if(/MSIE[ ]+6/.test(navigator.userAgent)){b.src="javascript:false"}b.allowTransparency="true";v[j](b);try{b.contentWindow[g].open()}catch(w){c[e]=d[e];o="javascript:var d="+g+".open();d.domain='"+d.domain+"';";b[k]=o+"void(0);"}try{var t=b.contentWindow[g];t.write(p());t.close()}catch(x){b[k]=o+'d.write("'+p().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};ld()};nt()})({loader: "static.olark.com/jsclient/loader0.js",name:"olark",methods:["configure","extend","declare","identify"]});
-/* custom configuration goes here (www.olark.com/documentation) */
-olark.identify('4772-764-10-6439');/*]]>{/literal}*/</script><noscript><a href="https://www.olark.com/site/4772-764-10-6439/contact" title="Contact us" target="_blank">Questions? Feedback?</a> powered by <a href="http://www.olark.com?welcome" title="Olark live chat software">Olark live chat software</a></noscript><!-- end olark code -->
 
 
 </body>
