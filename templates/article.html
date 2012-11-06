@@ -8,26 +8,25 @@
             <h1 id="title">
                 {{ article.title }}
             </h1>
+            {% if article.tags %}
+              <p class="category">
+              {% for tag in article.tags %}
+                  <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
+              {% endfor %}
+              </p>
+            {% endif %}
             </header>
             {{ article.content }}
         <div id="article_meta">
           {% if not article.category == 'posts' %}
             Category: <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
           {% endif %}
-          {% if article.tags %}
-            <br />Tags:
-            {% for tag in article.tags %}
-              <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
-            {% endfor %}
-          {% endif %}
+
         </div>
         </article>
       </div>
     </div>
   </div>
-  <footer>
-    <a href="{{ SITEURL }}/" class="button_accent">&larr;&nbsp;&nbsp;&nbsp;Back to blog</a>
-  </footer>
   {% if DISQUS_SITENAME %}
     <div id="comments">
     <h2>Comments</h2>
