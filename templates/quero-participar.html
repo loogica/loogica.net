@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block body %}
+  <!-- Content
+  ================================================== -->
+  <div class="contentFrame row">
+    <div class="content row">
+
+      <section>
+        <header class="row">
+          <h1>Quero Participar</h1>
+        </header>
+
+        <div class="row">
+          <div class="col-50">
+
+            <p>Para você receber mais informações de como participar e sobre os eventos, cadastre-se aqui:</p>
+
+            <form action="{{ url_for('create_user') }}" method="POST" accept-charset="utf-8">
+
+                  <div class="formRow labelBlock inputText">
+                      <label for="id_name">Nome</label>
+                      {% if form.name.errors %}
+                      <ul class="errorList">
+                        {% for error in form.name.errors %}
+                        <li>{{ error }}</li>
+                        {% endfor %}
+                      </ul>
+                      {% endif %}
+                      <input type="text" id="id_name" name="name" value="{{ form.name.data }}"required>
+                  </div>
+
+                  <div class="formRow labelBlock inputText">
+                      <label for="id_email">Email</label>
+                      {% if form.email.errors %}
+                      <ul class="errorList">
+                        {% for error in form.email.errors %}
+                        <li>{{ error }}</li>
+                        {% endfor %}
+                      </ul>
+                      {% endif %}
+                      <input type="text" id="id_email" name="email" value="{{ form.email.data }}" required>
+                  </div>
+
+                  <!--div class="formRow labelBlock inputText">
+                      <label for="id_email">Email</label>
+                      <ul class="errorList">
+                          <li>Este campo é obrigatório.</li>
+                          <li>Um exemplo de uma segunda ou mais linhas de erro no mesmo campo.</li>
+                      </ul>
+                      <input type="text" id="id_email" name="email" required>
+                  </div-->
+
+                  <p><input type="submit" value="Quero Participar Agora" class="submitButton"></p>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
+  </div>
+{% endblock %}
