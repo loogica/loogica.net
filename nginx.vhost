@@ -5,6 +5,11 @@ server {
 
     root /opt/apps/loogica.net/;
 
+    location /videos {
+        index index.html;
+        alias /opt/apps/videos;
+    }
+
     location / {
         uwsgi_pass unix:/opt/run/loogica_web.sock;
         include uwsgi_params;
