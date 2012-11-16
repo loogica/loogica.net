@@ -6,7 +6,7 @@ server {
     root /opt/apps/loogica.net/;
 
     location / {
-        uwsgi_pass unix:/opt/apps/run/loogica_web.sock;
+        uwsgi_pass unix:/opt/run/loogica_web.sock;
         include uwsgi_params;
     }
 }
