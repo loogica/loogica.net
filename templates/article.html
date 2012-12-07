@@ -22,15 +22,14 @@
               </p>
             {% endif %}
             </header>
-            <div class="videoTranscription">
             {{ article.content }}
             </div>
-        <div id="article_meta">
+        <!--div id="article_meta">
           {% if not article.category == 'posts' %}
             Category: <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
           {% endif %}
 
-        </div>
+        </div-->
         </article>
       </div>
     </div>
