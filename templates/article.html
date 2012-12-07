@@ -1,4 +1,10 @@
 {% extends "base.html" %}
+
+{% block metatag %}
+<meta name="description" content="{{ article.short_description }}">
+<meta name="author" content="{{ article.author }}">
+{% endblock %}
+
 {% block content %}
   <div class="contentFrame row">
     <div class="content">
