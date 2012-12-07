@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 
+{% block title %}{{ article.title }}{% endblock title %}
+
 {% block metatag %}
 <meta name="description" content="{{ article.short_description }}">
 <meta name="author" content="{{ article.author }}">
