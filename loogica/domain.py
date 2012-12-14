@@ -2,6 +2,8 @@
 
 import re
 
+from coopy.decorators import readonly
+
 
 email_pattern = re.compile('([\w\-\.]+@(\w[\w\-]*\.)+[\w\-]+)')
 
@@ -37,3 +39,21 @@ class ValidationError(Exception):
     def __unicode__(self):
         return "{field} - {message}".format(**self.data)
 
+
+class PollRepository(object):
+    def __init__(self):
+        self.polls = []
+
+    def add_poll(self, poll):
+        _id = len(self.polls) + 1
+        poll.update(id=_id)
+        self.polls.append(poll)
+
+    @readonly
+    def get_poll(self, _id):
+        _id -= 1
+        return self.polls[_id]
+
+    def vote(self, poll_id, option):
+        poll = self.get_poll(poll_id)
+        poll['options'][option] += 1
