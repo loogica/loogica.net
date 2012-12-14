@@ -44,9 +44,16 @@ class PollRepository(object):
     def __init__(self):
         self.polls = []
 
-    def add_poll(self, poll):
+    def add_poll(self, poll_name, options):
         _id = len(self.polls) + 1
+        poll = dict(name=poll_name)
         poll.update(id=_id)
+
+        initialized_options = []
+        for op in options:
+            initialized_options.append(dict(value=op, votes=0))
+        poll.update(options=initialized_options)
+
         self.polls.append(poll)
 
     @readonly
@@ -56,4 +63,5 @@ class PollRepository(object):
 
     def vote(self, poll_id, option):
         poll = self.get_poll(poll_id)
-        poll['options'][option] += 1
+        option -= 1
+        poll['options'][option]['votes'] += 1

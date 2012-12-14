@@ -49,17 +49,18 @@ def test_poll_repository_init():
 def test_poll_repository_add():
     repo = PollRepository()
 
-    repo.add_poll(dict(name="Name", options=[]))
+    repo.add_poll("Name", [])
 
     assert repo.polls[0] == dict(id=1,
                                  name="Name",
                                  options=[])
 
-    repo.add_poll(dict(name="Name2", options=["option1"]))
+    repo.add_poll("Name2", ["option1"])
 
     assert repo.polls[1] == dict(id=2,
                                  name="Name2",
-                                 options=["option1"])
+                                 options=[{'value': "option1",
+                                           'votes': 0}])
 
     assert len(repo.polls) == 2
 
@@ -67,46 +68,48 @@ def test_poll_repository_add():
 def test_poll_repository_get():
     repo = PollRepository()
 
-    repo.add_poll(dict(name="Name", options=[]))
+    repo.add_poll("Name", [])
 
     assert repo.get_poll(1) == dict(id=1,
                                     name="Name",
                                     options=[])
 
-    repo.add_poll(dict(name="Name2", options=["option1"]))
+    repo.add_poll("Name2", ["option1"])
 
-    assert repo.get_poll(2) == dict(id=2,
-                                    name="Name2",
-                                    options=["option1"])
+    assert repo.polls[1] == dict(id=2,
+                                 name="Name2",
+                                 options=[{'value': "option1",
+                                           'votes': 0}])
 
 def test_poll_repository_vote():
     repo = PollRepository()
 
-    options = {}
-    options['op1'] = 0
-    options['op2'] = 0
+    options = ['op1', 'op2']
 
-    repo.add_poll(dict(name="Name", options=options))
+    repo.add_poll("Name", options)
 
     assert repo.get_poll(1) == dict(id=1,
                                     name="Name",
-                                    options=options)
+                                    options=[{'value': "op1",
+                                              'votes': 0},
+                                              {'value': "op2",
+                                              'votes': 0}])
 
-    repo.vote(1, 'op1')
+    repo.vote(1, 1)
 
-    assert repo.get_poll(1)['options']['op1'] == 1
-    assert repo.get_poll(1)['options']['op2'] == 0
+    assert repo.get_poll(1)['options'][0]['votes'] == 1
+    assert repo.get_poll(1)['options'][1]['votes'] == 0
 
-    repo.vote(1, 'op1')
+    repo.vote(1, 1)
 
-    assert repo.get_poll(1)['options']['op1'] == 2
-    assert repo.get_poll(1)['options']['op2'] == 0
+    assert repo.get_poll(1)['options'][0]['votes'] == 2
+    assert repo.get_poll(1)['options'][1]['votes'] == 0
 
-    repo.vote(1, 'op2')
+    repo.vote(1, 2)
 
-    assert repo.get_poll(1)['options']['op1'] == 2
-    assert repo.get_poll(1)['options']['op2'] == 1
+    assert repo.get_poll(1)['options'][0]['votes'] == 2
+    assert repo.get_poll(1)['options'][1]['votes'] == 1
 
-    with pytest.raises(KeyError):
-        repo.vote(1, 'op3')
+    with pytest.raises(Exception):
+        repo.vote(1, 3)
 
