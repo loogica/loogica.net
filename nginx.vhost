@@ -10,8 +10,20 @@ server {
         alias /opt/apps/videos;
     }
 
+    location /slides {
+        index index.html;
+        alias /opt/apps/slides;
+    }
+
     location / {
         uwsgi_pass unix:/opt/run/loogica_web.sock;
         include uwsgi_params;
+    }
+
+    location /usuarios {
+        uwsgi_pass unix:/opt/run/loogica_web.sock;
+        include uwsgi_params;
+        auth_basic	"Restricted";
+        auth_basic_user_file /opt/apps/loogica.net/htpasswd;
     }
 }
