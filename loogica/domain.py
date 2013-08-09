@@ -22,6 +22,9 @@ class EmailRepository(object):
                                 'message': u'Email inválido'})
         self.users[email] = dict(name=name.strip())
 
+    def del_user(self, email):
+        del self.users[email]
+
     def valid_email(self, email):
         return email_pattern.search(email) >= 0
 

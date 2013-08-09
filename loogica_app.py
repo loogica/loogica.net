@@ -7,7 +7,7 @@ from loogica.domain import EmailRepository, ValidationError, PollRepository
 from loogica.forms import UserForm
 
 app = Flask(__name__)
-user_repo = init_persistent_system(EmailRepository())
+user_repo = init_persistent_system(EmailRepository(), basedir="emailrepository")
 poll_repo = init_persistent_system(PollRepository())
 
 @app.route("/")
